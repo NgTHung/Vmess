@@ -3,9 +3,9 @@
 ## DATABASE:
 
 - Datastax Astra
-- ~~ Hasura + yugabyte ~~
-- ~~ Tgcloud ~~
-- ~~ Planetscale ~~
+- <s> Hasura + yugabyte </s>
+- <s> Tgcloud </s>
+- <s> Planetscale </s>
 
 ## DEPLOY PLATFORM(not yet)
 
