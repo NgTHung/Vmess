@@ -1,16 +1,8 @@
 # TO DO LIST
 
-## DATABASE
-
-- Hasura + yugabyte
-- Planetscale
-- Tgcloud
+## DATABASE:
 - Datastax Astra
-## OR Paas
-
--
-
-## DEPLOY PLATFORM
+## DEPLOY PLATFORM(not yet)
 
 - Deta
 - Fly.io
