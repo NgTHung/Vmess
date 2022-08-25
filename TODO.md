@@ -5,7 +5,7 @@
 - Datastax Astra
 - <s> Hasura + yugabyte </s>
 - <s> Tgcloud </s>
-- <s> Planetscale </s>
+- ---Planetscale---
 
 ## DEPLOY PLATFORM(not yet)
 
