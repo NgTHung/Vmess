@@ -5,7 +5,7 @@
 - Hasura + yugabyte
 - Planetscale
 - Tgcloud
-
+- Datastax Astra
 ## OR Paas
 
 -
@@ -14,7 +14,9 @@
 
 - Deta
 - Fly.io
+- Glitch
 - Railway
 - Koyeb 
 - Mogenius
+- Heroku(no)
 - Cyclic?
