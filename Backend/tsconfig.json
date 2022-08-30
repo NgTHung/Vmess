@@ -1,16 +1,25 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "esModuleInterop": true,
-    "target": "es6",
-    "noImplicitAny": true,
-    "moduleResolution": "node",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
     "sourceMap": true,
-    "outDir": "dist",
-    "baseUrl": ".",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
     "paths": {
-      "*": ["node_modules/*"]
+      "@data/*": ["./src/data/*"],
+      "@cass/*": ["./src/cassandra/*"]
     }
-  },
-  "include": ["src/**/*"]
+  }
 }
