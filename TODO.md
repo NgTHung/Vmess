@@ -17,5 +17,3 @@
 - Mogenius
 - Heroku(no)
 - Cyclic?
-
-## rfqfcqaf
