@@ -19,7 +19,8 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "@data/*": ["./src/data/*"],
-      "@cass/*": ["./src/cassandra/*"]
+      "@cass/*": ["./src/cassandra/*"],
+      "@event/*": ["./src/event/*"]
     }
   }
 }
