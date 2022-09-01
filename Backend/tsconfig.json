@@ -20,7 +20,8 @@
     "paths": {
       "@data/*": ["./src/data/*"],
       "@cass/*": ["./src/cassandra/*"],
-      "@event/*": ["./src/event/*"]
+      "@event/*": ["./src/event/*"],
+      "@auth/*": ["./src/auth/*"]
     }
   }
 }

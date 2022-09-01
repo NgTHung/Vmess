@@ -1,5 +1,5 @@
 import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
-import { mapping } from 'cassandra-driver';
+import { mapping, types } from 'cassandra-driver';
 import  User  from '@data/data.entity';
 import { CassandraService } from '@cass/cassandra.service';
 
@@ -27,9 +27,13 @@ export class UserRepository implements OnModuleInit {
         return (await this.userMapper.findAll()).toArray();
     }
 
-    async getUserById(id: number) {
-        return (await this.userMapper.find({ id: id})).toArray();
+    async getUserById(id: types.Uuid) {
+        return (await this.userMapper.find({ id: id}));
     }
+
+   async getUserByName(username: string) {
+        return (await this.userMapper.find({username: username})).toArray()
+   }
 
     async createUser(user: User) {
         return (await this.userMapper.insert(user)).toArray();

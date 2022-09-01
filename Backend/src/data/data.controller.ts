@@ -9,7 +9,7 @@ export default class UserController {
 
     @Get('doSomthing')
     async doSomething() {
-        const res = await this.userService.getUser();
+        const res = await this.userService.getUser(); 
         return {msg: res}
     }
 }
