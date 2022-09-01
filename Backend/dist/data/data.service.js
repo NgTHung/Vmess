@@ -20,8 +20,8 @@ let UserService = class UserService {
     async getUser() {
         return this.userRepository.getUser();
     }
-    async getUserById(id) {
-        return this.userRepository.getUserById(id);
+    async getUserByName(username) {
+        return this.userRepository.getUserByName(username);
     }
     async createUser(employee) {
         return this.userRepository.createUser(employee);

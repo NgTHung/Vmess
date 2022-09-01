@@ -9,6 +9,6 @@ export declare class UserRepository implements OnModuleInit {
     userMapper: mapping.ModelMapper<User>;
     onModuleInit(): Promise<void>;
     getUser(): Promise<User[]>;
-    getUserById(id: number): Promise<User[]>;
+    getUserByName(username: string): Promise<User[]>;
     createUser(user: User): Promise<User[]>;
 }

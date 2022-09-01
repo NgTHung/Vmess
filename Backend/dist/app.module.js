@@ -11,11 +11,13 @@ const common_1 = require("@nestjs/common");
 const config_1 = require("@nestjs/config");
 const cassandra_module_1 = require("./cassandra/cassandra.module");
 const data_module_1 = require("./data/data.module");
+const event_module_1 = require("./event/event.module");
+const auth_module_1 = require("./auth/auth.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [config_1.ConfigModule.forRoot({ isGlobal: true }), cassandra_module_1.default, data_module_1.default]
+        imports: [config_1.ConfigModule.forRoot({ isGlobal: true }), cassandra_module_1.default, data_module_1.default, event_module_1.EventModule, auth_module_1.AuthModule]
     })
 ], AppModule);
 exports.AppModule = AppModule;

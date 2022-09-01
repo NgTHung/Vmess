@@ -21,7 +21,7 @@
       "@data/*": ["./src/data/*"],
       "@cass/*": ["./src/cassandra/*"],
       "@event/*": ["./src/event/*"],
-      "@auth/*": ["./src/auth/*"]
+      "@auth/*": ["./src/auth/*"],
     }
   }
 }

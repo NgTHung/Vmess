@@ -12,10 +12,6 @@ export class UserService {
         return this.userRepository.getUser(); // Get all User
     }
 
-    async getUserById(id: types.Uuid) {
-        return this.userRepository.getUserById(id);
-    }
-
     async getUserByName(username: string){
         return this.userRepository.getUserByName(username)
     }
