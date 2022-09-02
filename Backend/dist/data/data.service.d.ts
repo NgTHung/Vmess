@@ -1,9 +1,10 @@
 import { UserRepository } from '@data/data.repository';
-import User from '@data/data.entity';
+import { UserDto } from '@data/data.entity';
+import { types } from 'cassandra-driver';
 export declare class UserService {
     private userRepository;
     constructor(userRepository: UserRepository);
-    getUser(): Promise<User[]>;
-    getUserByName(username: string): Promise<User[]>;
-    createUser(employee: User): Promise<User[]>;
+    getUser(): Promise<import("@data/data.entity").default[]>;
+    getUserByName(username: string): Promise<import("@data/data.entity").default[]>;
+    createUser(employee: UserDto): Promise<types.Uuid>;
 }

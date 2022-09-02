@@ -36,7 +36,7 @@ let UserRepository = UserRepository_1 = class UserRepository {
         return (await this.userMapper.findAll()).toArray();
     }
     async getUserByName(username) {
-        return (await this.userMapper.find({ username: username })).toArray();
+        return (await this.userMapper.find({ username: username }, { limit: 1 })).toArray();
     }
     async createUser(user) {
         return (await this.userMapper.insert(user)).toArray();

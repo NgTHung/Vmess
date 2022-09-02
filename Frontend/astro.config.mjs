@@ -15,5 +15,6 @@ export default defineConfig({
     prefetch()
   ],
   output: "server",
-  adapter: deno()
+  adapter: deno(),
+  server: {port:8000}
 });

@@ -13,6 +13,7 @@ exports.UserService = void 0;
 const common_1 = require("@nestjs/common");
 const data_repository_1 = require("./data.repository");
 const data_entity_1 = require("./data.entity");
+const cassandra_driver_1 = require("cassandra-driver");
 let UserService = class UserService {
     constructor(userRepository) {
         this.userRepository = userRepository;
@@ -24,7 +25,9 @@ let UserService = class UserService {
         return this.userRepository.getUserByName(username);
     }
     async createUser(employee) {
-        return this.userRepository.createUser(employee);
+        let id = cassandra_driver_1.types.Uuid.random();
+        await this.userRepository.createUser({ id: id, username: employee.username, password: employee.password });
+        return id;
     }
 };
 UserService = __decorate([

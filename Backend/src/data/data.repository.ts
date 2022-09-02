@@ -28,7 +28,7 @@ export class UserRepository implements OnModuleInit {
     }
 
     async getUserByName(username: string) {
-        return (await this.userMapper.find({ username: username })).toArray()
+        return (await this.userMapper.find({ username: username },{limit: 1})).toArray()
     }
 
     async createUser(user: User) {

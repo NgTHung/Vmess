@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { UserRepository } from '@data/data.repository';
-import User from '@data/data.entity';
+import { UserDto } from '@data/data.entity';
 import { types } from 'cassandra-driver';
 
 @Injectable()
@@ -16,7 +16,9 @@ export class UserService {
         return this.userRepository.getUserByName(username)
     }
 
-    async createUser(employee: User) {
-        return this.userRepository.createUser(employee);
+    async createUser(employee: UserDto) {
+        let id = types.Uuid.random()
+        await this.userRepository.createUser({id: id,username:employee.username,password:employee.password});
+        return id
     }
 }
