@@ -42,5 +42,5 @@ export class AuthController {
   //   if(!await this.authService.checkUserExist(body)) return "Error! User existed"
   //   res.cookie("auth-cookies",await this.authService.register(body),{httpOnly:true,signed: true})
   //   return "Done"
-  // }
+  // } 
 }

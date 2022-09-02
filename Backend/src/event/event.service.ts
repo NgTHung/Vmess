@@ -23,5 +23,8 @@ export class EventService {
     //     return data;
     // }
 
-
+    @SubscribeMessage("prints")
+    handleprints(@MessageBody() data:any,@ConnectedSocket() cilent:Socket){
+        console.log(data)
+    }
 }
