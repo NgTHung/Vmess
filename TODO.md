@@ -17,3 +17,11 @@
 - Mogenius
 - Heroku(no)
 - Cyclic?
+
+## STORAGE PLATFORM:
+
+- Storj
+- <s>scaleway</s>
+- <s>Backblaze</s>
+- <s>Tebi</s>
+- <s>Idrive</s>
