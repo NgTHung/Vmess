@@ -19,7 +19,6 @@ export class CassandraService {
             keyspace: this.configService.get("CLIENT_KEYSPACE")
         });
     }
-    
     createMapper(mappingOptions: mapping.MappingOptions) {
      if(this.client == undefined) {
          this.createClient();
