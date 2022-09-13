@@ -39,7 +39,19 @@
 	input::placeholder{
 		color: black;
 	}
+	.title{
+		width: auto;
+		height: auto;
+		max-width: 300px;
+		max-height: 200px;
+		font-weight: bold;
+		text-decoration: underline;
+		font-size: large;
+	}
 </style>
+<div class="title">
+	Đăng nhập tài khoảng
+</div>
 <!-- <div class="big"> -->
 	<form >
 		<div>
