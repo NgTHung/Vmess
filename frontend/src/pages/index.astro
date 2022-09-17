@@ -1,7 +1,7 @@
 ---
-// import Svelte from "../components/test.svelte";
+import Home from "../components/home.svelte"
+import Layout from "src/layouts/Layout.astro";
 ---
-
-<!-- <App client:load/> -->
-<!-- <Svelte client:load/>
-<p> . </p> -->
+<Layout title="login">
+    <Home client:load/>
+</Layout>

@@ -22,8 +22,6 @@
 </script>
 
 <div>
-  {$isLoggedIn}
-  <button on:click={logout}>Logout</button>
   <article>Vmess</article>
   <span>
     <p class="title">Đăng nhập tài khoảng</p>
