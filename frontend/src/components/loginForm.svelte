@@ -16,13 +16,13 @@
       location.replace('/')
     }
   })
-  const logout = async ()=>{
-    await tryLogout()
-  }
 </script>
 
 <div>
-  <article>Vmess</article>
+  <article>
+    <img src="/images/icon.png"alt="Icon" />
+    <h1>Vmess</h1>
+  </article>
   <span>
     <p class="title">Đăng nhập tài khoảng</p>
     <!-- <div class="big"> -->
@@ -41,8 +41,8 @@
   form {
     width: auto;
     height: auto;
-    max-width: 350px;
-    max-height: 200px;
+    max-width: 500px;
+    max-height: 500px;
     border: 1px solid #dee3ed;
     border-radius: 30px;
     background-color: #fbfbfb;
@@ -70,6 +70,7 @@
     bottom: 0px;
     width: auto;
     display: inline-block;
+    margin-bottom: 20vh;
   }
   input[type="text"],
   input[type="password"] {
@@ -96,12 +97,28 @@
   .title {
     width: auto;
     height: auto;
-    max-width: 350px;
-    max-height: 200px;
+    max-width: inherit;
+    max-height: inherit;
     font-weight: bold;
     text-decoration: underline;
     font-size: large;
     display: flex;
     justify-content: center;
+  }
+  img{
+    transform: scale(0.7,0.7);
+    display: inline;
+  }
+  h1{
+    display: inline;
+    font-weight: bold;
+    font-size: large  !important;
+  }
+  article{
+    display: flex;
+    align-items: center;
+    background-color: #4FF9C5;
+    border: 1px solid none;
+    border-radius: 20px;
   }
 </style>
