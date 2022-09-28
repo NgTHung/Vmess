@@ -21,7 +21,7 @@
   }
   function sending() {
     if (data == "") return;
-    socket.emit("prints", data);
+    socket.emit("prints", htmlEscape(data));
     data = "";
   }
 </script>
