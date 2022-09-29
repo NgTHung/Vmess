@@ -24,10 +24,10 @@
     <h1>Vmess</h1>
   </article>
   <span>
-    <p class="title">Đăng nhập tài khoảng</p>
+    <p class="title">Đăng nhập tài khoản</p>
     <!-- <div class="big"> -->
     <form on:submit|preventDefault={login}>
-      <input type="text" placeholder="Tên tài khoảng..." bind:value={cred.username} />
+      <input type="text" placeholder="Tên tài khoản..." bind:value={cred.username} />
       <input type="password" placeholder="Mật khẩu..." bind:value={cred.password} />
       <div class="center">
         <input type="submit" value="Đăng nhập" class="submit" />
